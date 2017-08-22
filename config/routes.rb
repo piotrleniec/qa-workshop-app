@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'select-an-element-in-the-page-to-inspect-it',
+      to: 'tasks#select_an_element_in_the_page_to_inspect_it'
 end
