@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  database: qa_workshop_app_dev
+
+test:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  database: qa_workshop_app_test
+
+production:
+  adapter: postgresql
+  host: <%= ENV['DATABASE_URL'] %>
