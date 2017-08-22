@@ -1,0 +1,11 @@
+.toggle_device_toolbar {
+  .image {
+    width: 1280px;
+    height: 720px;
+    background: url('/images/toggle_device_toolbar/good.jpg');
+
+    @media (min-width: 1000px) and (max-width: 1005px) {
+      background: url('/images/toggle_device_toolbar/bad.jpg');
+    }
+  }
+}
