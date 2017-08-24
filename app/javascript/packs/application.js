@@ -1,10 +1,18 @@
-/* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
+const addCookieButton = document.getElementById('add-cookie-button')
+addCookieButton.onclick = () => {
+  const cookieName = document.getElementById('cookie-name').value
+  const cookieValue = document.getElementById('cookie-value').value
 
-console.log('Hello World from Webpacker')
+  document.cookie = `${cookieName}=${cookieValue}`
+}
+
+const localStorageDiv = document.getElementById('ls')
+localStorageDiv.innerText = JSON.stringify(localStorage)
+
+const addLsButton = document.getElementById('add-ls-button')
+addLsButton.onclick = () => {
+  const cookieName = document.getElementById('ls-name').value
+  const cookieValue = document.getElementById('ls-value').value
+
+  localStorage[cookieName] = cookieValue
+}

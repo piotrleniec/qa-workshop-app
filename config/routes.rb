@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'http-status-codes/forbidden', to: 'http_status_codes#forbidden'
   get 'http-status-codes/internal-server-error',
       to: 'http_status_codes#internal_server_error'
+  get 'application', to: 'tasks#application'
 end

@@ -1,0 +1,28 @@
+<ul>
+  <% cookies.each do |name, value| %>
+    <li>
+      <%= "NAME: #{name}" %>
+      <br />
+      <%= "VALUE: #{value}" %>
+    </li>
+  <% end %>
+</ul>
+<br />
+
+<input id="cookie-name" />
+<input id="cookie-value" />
+<button id="add-cookie-button">Add Cookie</button>
+
+<br />
+<br />
+<hr />
+<br />
+
+<div id="ls"></div>
+<br />
+
+<input id="ls-name" />
+<input id="ls-value" />
+<button id="add-ls-button">Add Cookie</button>
+
+<%= javascript_pack_tag 'application' %>

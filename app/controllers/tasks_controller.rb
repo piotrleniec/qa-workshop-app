@@ -7,4 +7,7 @@ class TasksController < ApplicationController
 
   def http_status_codes
   end
+
+  def application
+  end
 end
