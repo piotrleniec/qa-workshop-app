@@ -4,4 +4,7 @@ class TasksController < ApplicationController
 
   def toggle_device_toolbar
   end
+
+  def http_status_codes
+  end
 end
